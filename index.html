@@ -5,36 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="/style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calculadora">
-        <div class="pantalla">
-            <div id="valor-anterior"></div>
-            <div id="valor-actual"></div>
-        </div>
-        <button class="operador">/</button>
-        <button class="operador">*</button>
-        <button class="operador">-</button>
-        <button class="operador">+</button>
-        <button class="operador">=</button>
-        <button class="numero">.</button>
-        <button class="numero">9</button>
-        <button class="numero">8</button>
-        <button class="numero">7</button>
-        <button class="numero">6</button>
-        <button class="numero">5</button>
-        <button class="numero">4</button>
-        <button class="numero">3</button>
-        <button class="numero">2</button>
-        <button class="numero">1</button>
-        <button class="numero">0</button>
-        <button id="c">C</button>
+        <div class="pantalla">0</div>
+        <button class="operador" onclick="dividir()">/</button>
+        <button class="operador" onclick="multiplicar()">*</button>
+        <button class="operador" onclick="restar()">-</button>
+        <button class="operador" onclick="sumar()">+</button>
+        <button class="operador" onclick="resultado()">=</button>
+        <button class="numero" onclick="registrarNumero()">.</button>
+        <button class="numero" onclick="registrarNumero()">9</button>
+        <button class="numero" onclick="registrarNumero()">8</button>
+        <button class="numero" onclick="registrarNumero()">7</button>
+        <button class="numero" onclick="registrarNumero()">6</button>
+        <button class="numero" onclick="registrarNumero()">5</button>
+        <button class="numero" onclick="registrarNumero()">4</button>
+        <button class="numero" onclick="registrarNumero()">3</button>
+        <button class="numero" onclick="registrarNumero()">2</button>
+        <button class="numero" onclick="registrarNumero()">1</button>
+        <button class="numero" onclick="registrarNumero()">0</button>
+        <button id="c" onclick="borrar()">C</button>
     </div>
-    <script src="/index.js"></script>
-
-
-    
+    <script src="index.js"></script>
 </body>
 </html>
